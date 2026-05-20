@@ -24,10 +24,10 @@ export default function Hero() {
     if (el) revealRefs.current[i] = el;
   };
   return (
-    <section style={{ minHeight: "100vh", display: "flex", flexDirection: "column", justifyContent: "center", paddingTop: "8rem", paddingBottom: "6rem", paddingLeft: "var(--pad)", paddingRight: "var(--pad)", overflow: "hidden", position: "relative" }}>
+    <section style={{ minHeight: "100vh", display: "flex", flexDirection: "column", justifyContent: "center", paddingTop: "9.5rem", paddingBottom: "6rem", paddingLeft: "var(--pad)", paddingRight: "var(--pad)", overflow: "hidden", position: "relative" }}>
 
       {/* Ticker */}
-      <div style={{ position: "absolute", top: 0, left: 0, right: 0, overflow: "hidden", borderBottom: "1px solid var(--line-soft)", padding: "1.1rem 0", WebkitMaskImage: "linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent)", maskImage: "linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent)" }}>
+      <div style={{ position: "absolute", top: "72px", left: 0, right: 0, overflow: "hidden", borderBottom: "1px solid var(--line-soft)", padding: "0.9rem 0", WebkitMaskImage: "linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent)", maskImage: "linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent)" }}>
         <div style={{ display: "inline-flex", gap: "1.4rem", whiteSpace: "nowrap", fontFamily: "var(--font-mono)", fontSize: ".8rem", color: "var(--text-faint)", animation: "ticker 38s linear infinite", willChange: "transform" }}>
           {ticker.map((t, i) => <span key={i} style={{ color: t === "·" ? "var(--text-faint)" : "var(--text-dim)" }}>{t}</span>)}
         </div>

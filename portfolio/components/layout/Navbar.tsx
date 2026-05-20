@@ -51,7 +51,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="nav-mobile-panel" style={{ position: "fixed", top: "64px", left: 0, right: 0, bottom: 0, background: "rgba(6,11,20,0.98)", backdropFilter: "blur(16px)", display: "flex", flexDirection: "column", padding: "2rem var(--pad)", gap: "1.5rem", zIndex: 140 }}>
+        <div className="nav-mobile-panel" style={{ position: "fixed", top: "64px", left: 0, right: 0, bottom: 0, background: "var(--ink)", display: "flex", flexDirection: "column", padding: "2rem var(--pad)", gap: "1.8rem", zIndex: 140, overflowY: "auto" }}>
           {links.map((link) => (
             <a key={link.href} href={link.href} onClick={(e) => handleAnchor(e, link.href)} style={{ fontFamily: "var(--font-mono)", fontSize: "1.1rem", color: "var(--text)", display: "flex", alignItems: "center", gap: ".8rem" }}>
               <span style={{ color: "var(--signal)", fontSize: ".8rem" }}>{link.num}</span>
