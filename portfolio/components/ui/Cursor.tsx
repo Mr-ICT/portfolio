@@ -1,5 +1,4 @@
 "use client";
-
 import { useEffect, useRef } from "react";
 
 export default function Cursor() {
@@ -24,7 +23,7 @@ export default function Cursor() {
     function loop() {
       rx += (mx - rx) * 0.18;
       ry += (my - ry) * 0.18;
-      ring.style.transform = `translate(${rx}px, ${ry}px) translate(-50%, -50%)`;
+      if (ring) ring.style.transform = `translate(${rx}px, ${ry}px) translate(-50%, -50%)`;
       animId = requestAnimationFrame(loop);
     }
 
