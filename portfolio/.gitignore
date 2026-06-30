@@ -36,6 +36,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# local codegen / scaffolding scripts
+write-*.mjs
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

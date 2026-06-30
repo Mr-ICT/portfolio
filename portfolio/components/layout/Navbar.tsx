@@ -40,7 +40,7 @@ export default function Navbar() {
           </a>
         ))}
         <Link href="/design-vault" style={{ fontFamily: "var(--font-mono)", fontSize: ".74rem", color: "var(--text)", border: "1px solid var(--line)", padding: ".5rem .9rem", borderRadius: "100px", transition: "all .3s var(--ease)" }} onMouseEnter={(e) => { e.currentTarget.style.borderColor = "var(--signal)"; e.currentTarget.style.background = "rgba(0,212,200,.06)"; }} onMouseLeave={(e) => { e.currentTarget.style.borderColor = "var(--line)"; e.currentTarget.style.background = "transparent"; }}>
-          Design Vault
+          Graphic Design Vault
         </Link>
       </nav>
 
@@ -59,7 +59,7 @@ export default function Navbar() {
             </a>
           ))}
           <Link href="/design-vault" onClick={() => setOpen(false)} style={{ fontFamily: "var(--font-mono)", fontSize: "1.1rem", color: "var(--signal)", marginTop: "1rem" }}>
-            Design Vault →
+            Graphic Design Vault →
           </Link>
         </div>
       )}
